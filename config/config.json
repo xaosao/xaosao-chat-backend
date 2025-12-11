@@ -1,0 +1,23 @@
+{
+   "development": {
+      "username": "root",
+      "password": "pk11111111",
+      "database": "xaosao_db",
+      "host": "localhost",
+      "dialect": "mysql"
+   },
+   "test": {
+      "username": "root",
+      "password": null,
+      "database": "database_test",
+      "host": "127.0.0.1",
+      "dialect": "mysql"
+   },
+   "production": {
+      "username": "admin-user",
+      "password": "+3Jp@)}w-dT4GSkB",
+      "database": "xaosao_chat",
+      "host": "66.42.50.59",
+      "dialect": "mysql"
+   }
+}
