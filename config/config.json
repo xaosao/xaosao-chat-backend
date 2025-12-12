@@ -14,10 +14,10 @@
       "dialect": "mysql"
    },
    "production": {
-      "username": "admin-user",
-      "password": "+3Jp@)}w-dT4GSkB",
-      "database": "xaosao_chat",
-      "host": "66.42.50.59",
+      "username": "xaosao_user",
+      "password": "Xa05a0_pa55",
+      "database": "xaosao_chat_db",
+      "host": "45.32.122.112",
       "dialect": "mysql"
    }
 }
