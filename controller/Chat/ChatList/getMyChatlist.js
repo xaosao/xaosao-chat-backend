@@ -135,10 +135,15 @@ const getMyChatList = async (req, res) => {
         if (otherUser) {
           let userDetails = null;
           const phone = otherUser.User.phone_number;
+          const contactUserType = otherUser.User.user_type;
 
           if (phone && phone.trim() !== "") {
+            const whereClause = { phone_number: phone, user_id };
+            if (contactUserType) {
+              whereClause.contact_user_type = contactUserType;
+            }
             userDetails = await AllContact.findOne({
-              where: { phone_number: phone, user_id },
+              where: whereClause,
               attributes: ["full_name"],
             });
           }
